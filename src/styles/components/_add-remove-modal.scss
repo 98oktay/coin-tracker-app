@@ -1,0 +1,32 @@
+.addRemoveModal {
+  @apply fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center;
+
+  &-container {
+    @apply p-8 border w-[800px] max-h-screen min-h-96 overflow-auto shadow-lg rounded-md bg-white transition-all;
+  }
+
+  &-header {
+    @apply flex justify-between items-center;
+  }
+
+  &-title {
+    @apply text-2xl font-bold text-gray-900;
+  }
+
+  &-search {
+    @apply mt-2 px-2 py-3;
+  }
+
+  &-error {
+    @apply text-center py-3 bg-red-100 text-xs rounded;
+  }
+  &-searchInput {
+    @apply w-full rounded-md border-gray-300 border p-2;
+  }
+  &-list {
+    @apply flex flex-col gap-2 mt-4;
+  }
+  &-listItem {
+    @apply flex justify-between items-center p-2 px-4 rounded-md shadow-md;
+  }
+}

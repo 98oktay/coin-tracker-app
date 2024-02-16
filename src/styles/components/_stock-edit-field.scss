@@ -1,0 +1,22 @@
+.stockEditField {
+  @apply flex flex-grow flex-row justify-between items-center gap-4;
+
+  &-info {
+    @apply flex flex-col flex-grow;
+  }
+  &-symbol {
+    @apply text-xl font-bold;
+  }
+  &-prices {
+    @apply text-sm;
+  }
+  &-actions {
+    @apply flex flex-row gap-2;
+  }
+  &-input {
+    @apply border border-blue-200 rounded text-right w-32;
+    &-error {
+      @apply border-red-500;
+    }
+  }
+}

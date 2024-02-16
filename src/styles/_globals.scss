@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f8f8f8;
+}
+
+.app {
+  @apply flex min-h-screen flex-col p-24 max-w-7xl mx-auto bg-white shadow-2xl;
+}
+
+.container {
+  @apply flex grow flex-row justify-between gap-16;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    @apply flex-col gap-16;
+  }
+}

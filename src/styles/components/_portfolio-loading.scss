@@ -1,0 +1,9 @@
+.portfolioLoading {
+  @apply flex items-center justify-center h-full w-full min-h-16 absolute top-0 left-0 bg-black bg-opacity-10 rounded  transition-opacity duration-300;
+  &--hidden {
+    @apply pointer-events-none opacity-0;
+  }
+  &-text {
+    @apply bg-white/30 p-3 py-1 rounded-lg;
+  }
+}

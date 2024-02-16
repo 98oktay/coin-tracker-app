@@ -1,0 +1,9 @@
+.pieChart {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  max-width: 100%;
+  &-noItems {
+    @apply flex text-center py-10 bg-slate-100 rounded-full aspect-square justify-center items-center text-xs;
+  }
+}
