@@ -91,6 +91,7 @@ const PortfolioProvider = ({ children }: { children: React.ReactNode }) => {
     getTickerItems()
       .then((data) => {
         setAssets(data);
+        setError(null);
         const localItems = getStorageArray("portfolio");
         setPortfolio(mergePortfolio(localItems, data));
       })

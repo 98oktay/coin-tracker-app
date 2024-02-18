@@ -10,7 +10,7 @@ const getTickerItems = async () => {
     return response.data;
   } catch (e) {
     console.warn(`getTickerItems error`, e);
-    return null;
+    throw new Error(`Service error: ${e.message}`);
   }
 };
 

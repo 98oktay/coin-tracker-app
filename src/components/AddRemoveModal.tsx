@@ -19,12 +19,11 @@ function AddRemoveModal() {
       }
     };
 
-    document.addEventListener("keydown", handleEscape);
-
+    searchVisible && document.addEventListener("keydown", handleEscape);
     return () => {
       document.removeEventListener("keydown", handleEscape);
     };
-  }, [toggleSearch]);
+  }, [searchVisible, toggleSearch]);
 
   useEffect(() => {
     setSearchText("");
